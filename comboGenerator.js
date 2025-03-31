@@ -81,11 +81,10 @@ var PMFH = [halo, ninety, twoThousand, munchmill, ufo, backSpin, bellymill, nutc
 var PMFI = [airFlare, ninety, twoThousand, halo, backSpin, ufo, virginFlare, handcuffs, bellymill, airChairSpin, jackHammer, elbowTrack, elbowSpin, headglide, shoulderSpin, handHop, tombstone, airChair, flagFreeze, hollowBack, invert, pikeFreeze, sideFreeze, oneHandAirBaby]
 /*
 
-INSTRUCTIONS 
+INSTRUCTIONS
 
-1. Check CSS works on phones 
-2. Build new pages 
-3. Test 
+1. Build new pages 
+2. Test 
 
 */
 
@@ -459,4 +458,125 @@ function PMFE6(){
 
 } 
 
-//
+//Medium Move and Freeze Functions 
+function PMFM3(){
+    var PMFM = [flare, headspin, barrelmill, backSpin, bellymill, tapMill, coinDrop, turtle, swipe ][airBaby, babyFreeze,elbowFreeze,shoulderFreeze, sideFreeze, turtleFreeze]
+    PMFM.sort(() => Math.random() - 0.5);
+    var movesFreezes = PMFM.splice (0, 3);     
+    sessionStorage.setItem("movesFreezes", movesFreezes);
+    
+ document.getElementById("movesFreezes").innerHTML = movesFreezes
+
+} 
+
+function PMFM4(){
+    var PMFM = [flare, headspin, barrelmill, backSpin, bellymill, tapMill, coinDrop, turtle, swipe ][airBaby, babyFreeze,elbowFreeze,shoulderFreeze, sideFreeze, turtleFreeze]
+    PMFM.sort(() => Math.random() - 0.5);
+    var movesFreezes = PMFM.splice (0, 4);     
+    sessionStorage.setItem("movesFreezes", movesFreezes);
+    
+ document.getElementById("movesFreezes").innerHTML = movesFreezes
+
+} 
+
+function PMFM5(){
+    var PMFM = [flare, headspin, barrelmill, backSpin, bellymill, tapMill, coinDrop, turtle, swipe ][airBaby, babyFreeze,elbowFreeze,shoulderFreeze, sideFreeze, turtleFreeze]
+    PMFM.sort(() => Math.random() - 0.5);
+    var movesFreezes = PMFM.splice (0, 5);     
+    sessionStorage.setItem("movesFreezes", movesFreezes);
+    
+ document.getElementById("movesFreezes").innerHTML = movesFreezes
+
+} 
+
+function PMFM6(){
+    var PMFM = [flare, headspin, barrelmill, backSpin, bellymill, tapMill, coinDrop, turtle, swipe ][airBaby, babyFreeze,elbowFreeze,shoulderFreeze, sideFreeze, turtleFreeze]
+    PMFM.sort(() => Math.random() - 0.5);
+    var movesFreezes = PMFM.splice (0, 6);     
+    sessionStorage.setItem("movesFreezes", movesFreezes);
+    
+ document.getElementById("movesFreezes").innerHTML = movesFreezes
+
+} 
+
+//Hard Move and Freeze Functions 
+function PMFH3(){
+    var PMFH = [halo, ninety, twoThousand, munchmill, ufo, backSpin, bellymill, nutcrackers, turtle, elbowTrack, gorillas, flare, headglide, shoulderSpin, airBaby, airChair, elbowFreeze, flagFreeze, handstand, oneHandFreeze, sideFreeze]
+    PMFH.sort(() => Math.random() - 0.5);
+    var movesFreezes = PMFH.splice (0, 3);     
+    sessionStorage.setItem("movesFreezes", movesFreezes);
+    
+ document.getElementById("movesFreezes").innerHTML = movesFreezes
+
+} 
+
+function PMFH4(){
+    var PMFH = [halo, ninety, twoThousand, munchmill, ufo, backSpin, bellymill, nutcrackers, turtle, elbowTrack, gorillas, flare, headglide, shoulderSpin, airBaby, airChair, elbowFreeze, flagFreeze, handstand, oneHandFreeze, sideFreeze]
+    PMFH.sort(() => Math.random() - 0.5);
+    var movesFreezes = PMFH.splice (0, 4);     
+    sessionStorage.setItem("movesFreezes", movesFreezes);
+    
+ document.getElementById("movesFreezes").innerHTML = movesFreezes
+
+} 
+
+function PMFH5(){
+    var PMFH = [halo, ninety, twoThousand, munchmill, ufo, backSpin, bellymill, nutcrackers, turtle, elbowTrack, gorillas, flare, headglide, shoulderSpin, airBaby, airChair, elbowFreeze, flagFreeze, handstand, oneHandFreeze, sideFreeze]
+    PMFH.sort(() => Math.random() - 0.5);
+    var movesFreezes = PMFH.splice (0, 5);     
+    sessionStorage.setItem("movesFreezes", movesFreezes);
+    
+ document.getElementById("movesFreezes").innerHTML = movesFreezes
+
+} 
+
+function PMFH6(){
+    var PMFH = [halo, ninety, twoThousand, munchmill, ufo, backSpin, bellymill, nutcrackers, turtle, elbowTrack, gorillas, flare, headglide, shoulderSpin, airBaby, airChair, elbowFreeze, flagFreeze, handstand, oneHandFreeze, sideFreeze]
+    PMFH.sort(() => Math.random() - 0.5);
+    var movesFreezes = PMFH.splice (0, 6);     
+    sessionStorage.setItem("movesFreezes", movesFreezes);
+    
+ document.getElementById("movesFreezes").innerHTML = movesFreezes
+
+} 
+
+//Insanity Moves and Freezes 
+function PMFI3(){
+    var PMFI = [airFlare, ninety, twoThousand, halo, backSpin, ufo, virginFlare, handcuffs, bellymill, airChairSpin, jackHammer, elbowTrack, elbowSpin, headglide, shoulderSpin, handHop, tombstone, airChair, flagFreeze, hollowBack, invert, pikeFreeze, sideFreeze, oneHandAirBaby]
+    PMFI.sort(() => Math.random() - 0.5);
+    var movesFreezes = PMFI.splice (0, 3);     
+    sessionStorage.setItem("movesFreezes", movesFreezes);
+    
+ document.getElementById("movesFreezes").innerHTML = movesFreezes
+
+} 
+
+function PMFI4(){
+    var PMFI = [airFlare, ninety, twoThousand, halo, backSpin, ufo, virginFlare, handcuffs, bellymill, airChairSpin, jackHammer, elbowTrack, elbowSpin, headglide, shoulderSpin, handHop, tombstone, airChair, flagFreeze, hollowBack, invert, pikeFreeze, sideFreeze, oneHandAirBaby]
+    PMFI.sort(() => Math.random() - 0.5);
+    var movesFreezes = PMFI.splice (0, 4);     
+    sessionStorage.setItem("movesFreezes", movesFreezes);
+    
+ document.getElementById("movesFreezes").innerHTML = movesFreezes
+
+} 
+
+function PMFI5(){
+    var PMFI = [airFlare, ninety, twoThousand, halo, backSpin, ufo, virginFlare, handcuffs, bellymill, airChairSpin, jackHammer, elbowTrack, elbowSpin, headglide, shoulderSpin, handHop, tombstone, airChair, flagFreeze, hollowBack, invert, pikeFreeze, sideFreeze, oneHandAirBaby]
+    PMFI.sort(() => Math.random() - 0.5);
+    var movesFreezes = PMFI.splice (0, 5);     
+    sessionStorage.setItem("movesFreezes", movesFreezes);
+    
+ document.getElementById("movesFreezes").innerHTML = movesFreezes
+
+} 
+
+function PMFI6(){
+    var PMFI = [airFlare, ninety, twoThousand, halo, backSpin, ufo, virginFlare, handcuffs, bellymill, airChairSpin, jackHammer, elbowTrack, elbowSpin, headglide, shoulderSpin, handHop, tombstone, airChair, flagFreeze, hollowBack, invert, pikeFreeze, sideFreeze, oneHandAirBaby]
+    PMFI.sort(() => Math.random() - 0.5);
+    var movesFreezes = PMFI.splice (0, 6);     
+    sessionStorage.setItem("movesFreezes", movesFreezes);
+    
+ document.getElementById("movesFreezes").innerHTML = movesFreezes
+
+} 
