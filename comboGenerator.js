@@ -87,7 +87,7 @@ var PMFI = [airFlare, ninety, twoThousand, halo, backSpin, ufo, virginFlare, han
 
 //Power Move Functions 
 //Easy Move Functions 
-/*function PME3(){
+function PME3(){
     var PME = [windmill, swipe, backSpin, tripod, coinDrop] 
     PME.sort(() => Math.random() - 0.5);
     var moves = PME.splice (0, 3);     
@@ -95,7 +95,7 @@ var PMFI = [airFlare, ninety, twoThousand, halo, backSpin, ufo, virginFlare, han
     
  document.getElementById("moves").innerHTML = moves
 
-} */
+} 
 
 function PME4(){
     var PME = [windmill, swipe, backSpin, tripod, coinDrop] 
