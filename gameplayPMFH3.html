@@ -1,28 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Combo Generator Difficulty Selection Moves</title>
+<title>Combo Generator GamePlay PMFH3 </title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="comboGenerator.js"></script>
 <style>
-      body {
+    body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color:  rgb(23, 230, 78);
-            color:white; 
+            color:white;
             text-align: center;
         }
 
-        .gameTitle {
-            text-align: center;
-            color: white; 
-        }
-
-        .pageTitle {
-            text-align: center;
-            color: white; 
-        }
         header {
             background-color:  rgb(23, 230, 78);
             color: #fff;
@@ -43,13 +35,14 @@
             padding: 20px;
             text-align: center;
             border-radius: 10px;
-            color:white;
+            color: white;
+            font-size: 30px;
            
             
         }
 
-        .modeOption {
-            font-size: 40px
+        .comboButton{
+          font-size: 20px;
         }
 
 .continue{
@@ -68,18 +61,12 @@
             text-align: center;
             padding: 10px;
         }
-
         .A {color: white;
-            text-align:center;
+          text-align:center;
         }
 </style>
-<head>
-
-
-
-
 </head>
-<body >
+<body onload ="PMFH3();">
 
 <div>
   <h1 class="gameTitle screensize">Combo Generator</h1>
@@ -89,18 +76,22 @@
 
 
 <div class= "content screensize">
-  <h2 class="pageTitle screensize">Select Difficulty: </h2>
+  
+  <input class="comboButton" type="submit" value="Generate New Combo" onclick= "PMFH3();">
+  
+  <br> 
 
+  <p class="move" id="movesFreezes"></p>
 
-    <a href="easyNumberSelectionMoves.html"><h3 class="modeOption screensize">Easy </h3></a>
+  
+  
+  <br>
+  
    
-    <a href="mediumNumberSelectionMoves.html"><h3 class="modeOption screensize">Medium</h3></a>
-
-   
-    <a href="hardNumberSelectionMoves.html"><h3 class="modeOption screensize">Hard</h3></a>
-
-    <a href="insanityNumberSelectionMoves.html"><h3 class="modeOption screensize">Insanity</h3></a>
-
+    <a href="index.html" class="End ">End Exercise</a>
+    
+      
+     
 </div>  
 
 
