@@ -59,7 +59,7 @@ var oneHandAirBaby = " One Hand Air Baby "
 
 //Move Arrays//
 
-var PME = [windmill, swipe, backSpin, tripod, coinDrop]  //Add more moves? 
+//var PME = [windmill, swipe, backSpin, tripod, coinDrop]  //Add more moves? 
 var PMM = [flare, headspin, barrelmill, backSpin, bellymill, tapMill, coinDrop, turtle, swipe ]
 var PMH = [halo, ninety, twoThousand, munchmill, ufo, backSpin, bellymill, nutcrackers, turtle, elbowTrack, gorillas, flare, headglide, shoulderSpin]
 var PMI = [airFlare, ninety, twoThousand, halo, backSpin, ufo, virginFlare, handcuffs, bellymill, airChairSpin, jackHammer, elbowTrack, elbowSpin, headglide, shoulderSpin, handHop, tombstone]
@@ -79,20 +79,15 @@ var PMFE = [windmill, swipe, backSpin, tripod, coinDrop, babyFreeze, headstand, 
 var PMFM = [flare, headspin, barrelmill, backSpin, bellymill, tapMill, coinDrop, turtle, swipe ][airBaby, babyFreeze,elbowFreeze,shoulderFreeze, sideFreeze, turtleFreeze]
 var PMFH = [halo, ninety, twoThousand, munchmill, ufo, backSpin, bellymill, nutcrackers, turtle, elbowTrack, gorillas, flare, headglide, shoulderSpin, airBaby, airChair, elbowFreeze, flagFreeze, handstand, oneHandFreeze, sideFreeze]
 var PMFI = [airFlare, ninety, twoThousand, halo, backSpin, ufo, virginFlare, handcuffs, bellymill, airChairSpin, jackHammer, elbowTrack, elbowSpin, headglide, shoulderSpin, handHop, tombstone, airChair, flagFreeze, hollowBack, invert, pikeFreeze, sideFreeze, oneHandAirBaby]
-/*
-
-INSTRUCTIONS
-
-1. Build new pages 
-2. Test 
-
-*/
 
 
-//Game Play Functions 
+
+
+//Game Play Functions
+
 //Power Move Functions 
 //Easy Move Functions 
-function PME3(){
+/*function PME3(){
     var PME = [windmill, swipe, backSpin, tripod, coinDrop] 
     PME.sort(() => Math.random() - 0.5);
     var moves = PME.splice (0, 3);     
@@ -100,7 +95,7 @@ function PME3(){
     
  document.getElementById("moves").innerHTML = moves
 
-} 
+} */
 
 function PME4(){
     var PME = [windmill, swipe, backSpin, tripod, coinDrop] 
