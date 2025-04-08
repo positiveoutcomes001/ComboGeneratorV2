@@ -460,7 +460,7 @@ function PMFE6(){
 
 //Medium Move and Freeze Functions 
 function PMFM3(){
-    var PMFM = [flare, headspin, barrelmill, backSpin, bellymill, tapMill, coinDrop, turtle, swipe ][airBaby, babyFreeze,elbowFreeze,shoulderFreeze, sideFreeze, turtleFreeze]
+    var PMFM = [flare, headspin, barrelmill, backSpin, bellymill, tapMill, coinDrop, turtle, swipe, airBaby, babyFreeze,elbowFreeze,shoulderFreeze, sideFreeze, turtleFreeze]
     PMFM.sort(() => Math.random() - 0.5);
     var movesFreezes = PMFM.splice (0, 3);     
     sessionStorage.setItem("movesFreezes", movesFreezes);
@@ -470,7 +470,7 @@ function PMFM3(){
 } 
 
 function PMFM4(){
-    var PMFM = [flare, headspin, barrelmill, backSpin, bellymill, tapMill, coinDrop, turtle, swipe ][airBaby, babyFreeze,elbowFreeze,shoulderFreeze, sideFreeze, turtleFreeze]
+    var PMFM = [flare, headspin, barrelmill, backSpin, bellymill, tapMill, coinDrop, turtle, swipe, airBaby, babyFreeze,elbowFreeze,shoulderFreeze, sideFreeze, turtleFreeze]
     PMFM.sort(() => Math.random() - 0.5);
     var movesFreezes = PMFM.splice (0, 4);     
     sessionStorage.setItem("movesFreezes", movesFreezes);
@@ -480,7 +480,7 @@ function PMFM4(){
 } 
 
 function PMFM5(){
-    var PMFM = [flare, headspin, barrelmill, backSpin, bellymill, tapMill, coinDrop, turtle, swipe ][airBaby, babyFreeze,elbowFreeze,shoulderFreeze, sideFreeze, turtleFreeze]
+    var PMFM = [flare, headspin, barrelmill, backSpin, bellymill, tapMill, coinDrop, turtle, swipe, airBaby, babyFreeze,elbowFreeze,shoulderFreeze, sideFreeze, turtleFreeze]
     PMFM.sort(() => Math.random() - 0.5);
     var movesFreezes = PMFM.splice (0, 5);     
     sessionStorage.setItem("movesFreezes", movesFreezes);
@@ -490,7 +490,7 @@ function PMFM5(){
 } 
 
 function PMFM6(){
-    var PMFM = [flare, headspin, barrelmill, backSpin, bellymill, tapMill, coinDrop, turtle, swipe ][airBaby, babyFreeze,elbowFreeze,shoulderFreeze, sideFreeze, turtleFreeze]
+    var PMFM = [flare, headspin, barrelmill, backSpin, bellymill, tapMill, coinDrop, turtle, swipe, airBaby, babyFreeze,elbowFreeze,shoulderFreeze, sideFreeze, turtleFreeze]
     PMFM.sort(() => Math.random() - 0.5);
     var movesFreezes = PMFM.splice (0, 6);     
     sessionStorage.setItem("movesFreezes", movesFreezes);
