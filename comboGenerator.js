@@ -59,7 +59,7 @@ var oneHandAirBaby = " One Hand Air Baby "
 
 //Move Arrays//
 
-//var PME = [windmill, swipe, backSpin, tripod, coinDrop]  //Add more moves? 
+var PME = [windmill, swipe, backSpin, tripod, coinDrop]  //Add more moves? 
 var PMM = [flare, headspin, barrelmill, backSpin, bellymill, tapMill, coinDrop, turtle, swipe ]
 var PMH = [halo, ninety, twoThousand, munchmill, ufo, backSpin, bellymill, nutcrackers, turtle, elbowTrack, gorillas, flare, headglide, shoulderSpin]
 var PMI = [airFlare, ninety, twoThousand, halo, backSpin, ufo, virginFlare, handcuffs, bellymill, airChairSpin, jackHammer, elbowTrack, elbowSpin, headglide, shoulderSpin, handHop, tombstone]
@@ -72,16 +72,19 @@ var FM = [airBaby, babyFreeze,elbowFreeze,shoulderFreeze, sideFreeze, turtleFree
 var FH = [airBaby, airChair, elbowFreeze, flagFreeze, handstand, oneHandFreeze, sideFreeze]
 var FI = [airChair, flagFreeze, hollowBack, invert, pikeFreeze, sideFreeze, oneHandAirBaby]
 
-
+/*  NOT NEEDED 
 //Move and Freeze Arrays 
 
 var PMFE = [windmill, swipe, backSpin, tripod, coinDrop, babyFreeze, headstand, headElbowFreeze, lFreeze, shoulderFreeze, turtleFreeze]
 var PMFM = [flare, headspin, barrelmill, backSpin, bellymill, tapMill, coinDrop, turtle, swipe ][airBaby, babyFreeze,elbowFreeze,shoulderFreeze, sideFreeze, turtleFreeze]
 var PMFH = [halo, ninety, twoThousand, munchmill, ufo, backSpin, bellymill, nutcrackers, turtle, elbowTrack, gorillas, flare, headglide, shoulderSpin, airBaby, airChair, elbowFreeze, flagFreeze, handstand, oneHandFreeze, sideFreeze]
 var PMFI = [airFlare, ninety, twoThousand, halo, backSpin, ufo, virginFlare, handcuffs, bellymill, airChairSpin, jackHammer, elbowTrack, elbowSpin, headglide, shoulderSpin, handHop, tombstone, airChair, flagFreeze, hollowBack, invert, pikeFreeze, sideFreeze, oneHandAirBaby]
+*/
 
-
-
+//Clear Storage 
+function clearSessionStorage() {
+    sessionStorage.clear();
+  }
 
 //Game Play Functions
 
@@ -412,7 +415,7 @@ function FI6(){
 
 //Move and Freeze Functions 
 //Easy Move and Freeze Functions 
-
+/*
 function PMFE3(){
     var PMFE = [windmill, swipe, backSpin, tripod, coinDrop, babyFreeze, headstand, headElbowFreeze, lFreeze, shoulderFreeze, turtleFreeze]
     PMFE.sort(() => Math.random() - 0.5);
@@ -574,4 +577,269 @@ function PMFI6(){
     
  document.getElementById("movesFreezes").innerHTML = movesFreezes
 
+} */
+
+
+//Experiemental Code 
+//Move and Freezes Easy Functions 
+    function PMFE31(){
+    var PME = [windmill, swipe, backSpin, tripod, coinDrop] 
+    PME.sort(() => Math.random() - 0.5);
+    var moveOne = PME.splice (0, 1);     
+    sessionStorage.setItem("moveOne", moveOne);
 } 
+
+function PMFE32(){
+    var FE = [babyFreeze, headstand, headElbowFreeze, lFreeze, shoulderFreeze, turtleFreeze]
+    FE.sort(() => Math.random() - 0.5);
+    var moveTwo = FE.splice (0, 1);     
+    sessionStorage.setItem("moveTwo", moveTwo);
+} 
+
+function PMFE33(){
+    var PME = [windmill, swipe, backSpin, tripod, coinDrop] 
+    PME.sort(() => Math.random() - 0.5);
+    var moveThree = PME.splice (0, 1);     
+    sessionStorage.setItem("moveThree", moveThree);
+} 
+
+function PMFE34(){
+    var PME = [windmill, swipe, backSpin, tripod, coinDrop] 
+    PME.sort(() => Math.random() - 0.5);
+    var moveFour = PME.splice (0, 1);     
+    sessionStorage.setItem("moveFour", moveFour);
+} 
+
+function PMFE35(){
+    var FE = [babyFreeze, headstand, headElbowFreeze, lFreeze, shoulderFreeze, turtleFreeze]
+    FE.sort(() => Math.random() - 0.5);
+    var moveFive = FE.splice (0, 1);     
+    sessionStorage.setItem("moveFive", moveFive);
+} 
+
+function PMFE36(){
+    var PME = [windmill, swipe, backSpin, tripod, coinDrop] 
+    PME.sort(() => Math.random() - 0.5);
+    var moveSix = PME.splice (0, 1);     
+    sessionStorage.setItem("moveSix", moveSix);
+} 
+
+//Move and Freezes Medium Functions 
+function PMFM31(){
+    var FM = [airBaby, babyFreeze,elbowFreeze,shoulderFreeze, sideFreeze, turtleFreeze]
+    FM.sort(() => Math.random() - 0.5);
+    var moveOne = FM.splice (0, 1);     
+    sessionStorage.setItem("moveOne", moveOne);
+} 
+
+function PMFM32(){
+    var PMM = [flare, headspin, barrelmill, backSpin, bellymill, tapMill, coinDrop, turtle, swipe ]
+    PMM.sort(() => Math.random() - 0.5);
+    var moveTwo = PMM.splice (0, 1);     
+    sessionStorage.setItem("moveTwo", moveTwo);
+} 
+
+function PMFM33(){
+    var FM = [airBaby, babyFreeze,elbowFreeze,shoulderFreeze, sideFreeze, turtleFreeze]
+    FM.sort(() => Math.random() - 0.5);
+    var moveThree = FM.splice (0, 1);     
+    sessionStorage.setItem("moveThree", moveThree);
+} 
+
+function PMFM34(){
+    var PMM = [flare, headspin, barrelmill, backSpin, bellymill, tapMill, coinDrop, turtle, swipe ]
+    PMM.sort(() => Math.random() - 0.5);
+    var moveFour = PMM.splice (0, 1);     
+    sessionStorage.setItem("moveFour", moveFour);
+} 
+function PMFM35(){
+    var FM = [airBaby, babyFreeze,elbowFreeze,shoulderFreeze, sideFreeze, turtleFreeze]
+    FM.sort(() => Math.random() - 0.5);
+    var moveFive = FM.splice (0, 1);     
+    sessionStorage.setItem("moveFive", moveFive);
+} 
+
+function PMFM36(){
+    var PMM = [flare, headspin, barrelmill, backSpin, bellymill, tapMill, coinDrop, turtle, swipe ]
+    PMM.sort(() => Math.random() - 0.5);
+    var moveSix = PMM.splice (0, 1);     
+    sessionStorage.setItem("moveSix", moveSix);
+} 
+//Move and Freezes Hard Functions 
+function PMFH31(){
+    var FH = [airBaby, airChair, elbowFreeze, flagFreeze, handstand, oneHandFreeze, sideFreeze]
+    FH.sort(() => Math.random() - 0.5);
+    var moveOne = FH.splice (0, 1);     
+    sessionStorage.setItem("moveOne", moveOne);
+} 
+
+function PMFH32(){
+    var PMH = [halo, ninety, twoThousand, munchmill, ufo, backSpin, bellymill, nutcrackers, turtle, elbowTrack, gorillas, flare, headglide, shoulderSpin]
+    PMH.sort(() => Math.random() - 0.5);
+    var moveTwo = PMH.splice (0, 1);     
+    sessionStorage.setItem("moveTwo", moveTwo);
+} 
+function PMFH33(){
+    var FH = [airBaby, airChair, elbowFreeze, flagFreeze, handstand, oneHandFreeze, sideFreeze]
+    FH.sort(() => Math.random() - 0.5);
+    var moveThree = FH.splice (0, 1);     
+    sessionStorage.setItem("moveThree", moveThree);
+} 
+
+function PMFH34(){
+    var PMH = [halo, ninety, twoThousand, munchmill, ufo, backSpin, bellymill, nutcrackers, turtle, elbowTrack, gorillas, flare, headglide, shoulderSpin]
+    PMH.sort(() => Math.random() - 0.5);
+    var moveFour = PMH.splice (0, 1);     
+    sessionStorage.setItem("moveFour", moveFour);
+} 
+
+function PMFH35(){
+    var FH = [airBaby, airChair, elbowFreeze, flagFreeze, handstand, oneHandFreeze, sideFreeze]
+    FH.sort(() => Math.random() - 0.5);
+    var moveFive = FH.splice (0, 1);     
+    sessionStorage.setItem("moveFive", moveFive);
+} 
+
+function PMFH36(){
+    var PMH = [halo, ninety, twoThousand, munchmill, ufo, backSpin, bellymill, nutcrackers, turtle, elbowTrack, gorillas, flare, headglide, shoulderSpin]
+    PMH.sort(() => Math.random() - 0.5);
+    var moveSix = PMH.splice (0, 1);     
+    sessionStorage.setItem("moveSix", moveSix);
+} 
+
+//Moves and Freezes Insanity Functions 
+function PMFI31(){
+    var FI = [airChair, flagFreeze, hollowBack, invert, pikeFreeze, sideFreeze, oneHandAirBaby]
+    FI.sort(() => Math.random() - 0.5);
+    var moveOne = FI.splice (0, 1);     
+    sessionStorage.setItem("moveOne", moveOne);
+} 
+
+function PMFI32(){
+    var PMI = [airFlare, ninety, twoThousand, halo, backSpin, ufo, virginFlare, handcuffs, bellymill, airChairSpin, jackHammer, elbowTrack, elbowSpin, headglide, shoulderSpin, handHop, tombstone]
+    PMI.sort(() => Math.random() - 0.5);
+    var moveTwo = PMI.splice (0, 1);     
+    sessionStorage.setItem("moveTwo", moveTwo);
+} 
+
+function PMFI33(){
+    var FI = [airChair, flagFreeze, hollowBack, invert, pikeFreeze, sideFreeze, oneHandAirBaby]
+    FI.sort(() => Math.random() - 0.5);
+    var moveThree = FI.splice (0, 1);     
+    sessionStorage.setItem("moveThree", moveThree);
+} 
+
+function PMFI34(){
+    var PMI = [airFlare, ninety, twoThousand, halo, backSpin, ufo, virginFlare, handcuffs, bellymill, airChairSpin, jackHammer, elbowTrack, elbowSpin, headglide, shoulderSpin, handHop, tombstone]
+    PMI.sort(() => Math.random() - 0.5);
+    var moveFour = PMI.splice (0, 1);     
+    sessionStorage.setItem("moveFour", moveFour);
+} 
+
+function PMFI35(){
+    var FI = [airChair, flagFreeze, hollowBack, invert, pikeFreeze, sideFreeze, oneHandAirBaby]
+    FI.sort(() => Math.random() - 0.5);
+    var moveFive = FI.splice (0, 1);     
+    sessionStorage.setItem("moveFive", moveFive);
+} 
+
+function PMFI36(){
+    var PMI = [airFlare, ninety, twoThousand, halo, backSpin, ufo, virginFlare, handcuffs, bellymill, airChairSpin, jackHammer, elbowTrack, elbowSpin, headglide, shoulderSpin, handHop, tombstone]
+    PMI.sort(() => Math.random() - 0.5);
+    var moveSix = PMI.splice (0, 1);     
+    sessionStorage.setItem("moveSix", moveSix);
+} 
+
+function threeDisplay(){
+
+sessionStorage.getItem('moveOne')
+sessionStorage.getItem('moveTwo')
+sessionStorage.getItem('moveThree')
+sessionStorage.getItem('moveFour')
+sessionStorage.getItem('moveFive')
+sessionStorage.getItem('moveSix')
+
+var movesAndFreezes = [sessionStorage.getItem('moveOne'),
+    sessionStorage.getItem('moveTwo'),
+    sessionStorage.getItem('moveThree'),
+    sessionStorage.getItem('moveFour'),
+    sessionStorage.getItem('moveFive'),
+    sessionStorage.getItem('moveSix')]
+
+    document.getElementById("movesFreezes").innerHTML= movesAndFreezes
+};
+
+function threeDisplay(){
+
+    sessionStorage.getItem('moveOne')
+    sessionStorage.getItem('moveTwo')
+    sessionStorage.getItem('moveThree')
+
+    
+    var movesAndFreezes = [
+        sessionStorage.getItem('moveOne'),
+        sessionStorage.getItem('moveTwo'),
+        sessionStorage.getItem('moveThree')
+    ]
+        document.getElementById("movesFreezes").innerHTML= movesAndFreezes
+    };
+    
+   function fourDisplay(){
+
+        sessionStorage.getItem('moveOne')
+        sessionStorage.getItem('moveTwo')
+        sessionStorage.getItem('moveThree')
+        sessionStorage.getItem('moveFour')
+   
+        
+        var movesAndFreezes = [
+            sessionStorage.getItem('moveOne'),
+            sessionStorage.getItem('moveTwo'),
+            sessionStorage.getItem('moveThree'),
+            sessionStorage.getItem('moveFour'),
+           ]
+        
+            document.getElementById("movesFreezes").innerHTML= movesAndFreezes
+        };
+        
+        function fiveDisplay(){
+
+            sessionStorage.getItem('moveOne')
+            sessionStorage.getItem('moveTwo')
+            sessionStorage.getItem('moveThree')
+            sessionStorage.getItem('moveFour')
+            sessionStorage.getItem('moveFive')
+       
+            
+            var movesAndFreezes = [
+                sessionStorage.getItem('moveOne'),
+                sessionStorage.getItem('moveTwo'),
+                sessionStorage.getItem('moveThree'),
+                sessionStorage.getItem('moveFour'),
+                sessionStorage.getItem('moveFive'),]
+            
+                document.getElementById("movesFreezes").innerHTML= movesAndFreezes
+            };
+            
+                        
+
+            function sixDisplay(){
+
+                sessionStorage.getItem('moveOne')
+                sessionStorage.getItem('moveTwo')
+                sessionStorage.getItem('moveThree')
+                sessionStorage.getItem('moveFour')
+                sessionStorage.getItem('moveFive')
+                sessionStorage.getItem('moveSix')
+                
+                var movesAndFreezes = [sessionStorage.getItem('moveOne'),
+                    sessionStorage.getItem('moveTwo'),
+                    sessionStorage.getItem('moveThree'),
+                    sessionStorage.getItem('moveFour'),
+                    sessionStorage.getItem('moveFive'),
+                    sessionStorage.getItem('moveSix')]
+                
+                    document.getElementById("movesFreezes").innerHTML= movesAndFreezes
+                };
+                
+                
